@@ -1,0 +1,6 @@
+@mixin tarjetas ($margen, $display, $direccion, $alineacion) {
+    margin: $margen;
+    display: $display;
+    flex-direction: $direccion;
+    align-items: $alineacion;
+}

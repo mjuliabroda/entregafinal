@@ -1,0 +1,103 @@
+/* estilo productos viajeros */
+
+.main_products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #a0dbda;
+    .products_tittle {
+    text-align: center;
+    padding-top:  20px;
+    font-size: 22px;
+    }
+    .products {
+        @include tarjetas (30px, flex, column, center);
+
+        .product1 {
+            display: flex;
+            flex-direction: column;
+            width:325px;
+            align-items: center;
+            border: 3px solid $colorterciario;
+            background-color: white;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            margin-top: 20px;
+            .product1_tittle {
+                text-align: center;
+                color: black;
+                margin-top: 10px;
+                font-size: 18px;
+                font-weight: 700;
+                padding: 10px;
+                text-decoration: overline;
+                text-decoration: underline;
+            }
+            .product1_p {
+                text-align: center;
+                font-size: 16px;
+                padding: 0px 15px;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+            .product1_img {
+                width: 200px;
+                height: 150px;
+            }
+            .button {
+                font-size: 16px;
+                padding: 10px;
+                background-color: #f96b64;
+                border-radius: 5px;
+                margin: 20px;
+                padding: 5px 30px;
+                &:hover {
+                    cursor: pointer;
+                    opacity: 70%;
+                }         
+            }
+        }     
+
+        .product2 {
+            @extend .product1;
+            .product2_tittle {
+                @extend .product1_tittle;
+            }
+            .product2_p {
+                @extend .product1_p;
+            }
+            .product2_img {
+                width: 200px;
+                height: 150px;
+            }
+        }   
+
+        .product3 {
+            @extend .product1;
+            .product3_tittle {
+                @extend .product1_tittle;
+            }
+            .product3_p {
+                @extend .product1_p;
+            }
+            .product3_img {
+                width: 200px;
+                height: 150px
+            }
+        }  
+        
+        .product4 {
+            @extend .product1;
+            .product4_tittle {
+                @extend .product1_tittle;
+            }
+            .product4_p {
+                @extend .product1_p;
+            }
+            .product4_img {
+                width: 200px;
+                height: 150px;
+            }
+        }    
+        
+    }
+}

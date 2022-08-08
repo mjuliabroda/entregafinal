@@ -1,0 +1,86 @@
+/* estilo Contacto */
+.main_contact {
+    
+    background-color: $coloralternativo;
+    .backgroundImg {
+        background-image: url(../img/IMG_1544.jpg);
+        width: 100%;
+        height: fit-content;
+        background-size: cover;
+        background-repeat: no-repeat;
+        opacity: 0.8;
+    
+    }
+        h1 {
+            padding-top: 30px;
+            margin-bottom: 10px;
+            text-align: center;
+            color:black
+        }
+        h2 {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 24px;
+            color: black
+        }
+        .form {
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .name_email {
+                display: flex;
+                flex-direction: column;
+                .name {
+                    @extend .name_email;
+                    margin: 10px;
+                    .label_name {
+                        font-size: 25px;
+                        padding: 10px;
+                    }
+                }
+                .email {
+                    @extend .name;
+                    margin: 10px;
+                    .label_email {
+                        @extend .label_name;
+                    }
+                }
+            }
+            .coment {
+                display: flex;
+                flex-direction: column;
+                margin: 10px;
+                .label_coment {
+                    font-size: 25px;
+                    padding: 10px;              
+                }
+            }
+        }
+        .checkbox {
+            display: flex;
+            margin-left: 25px;
+            justify-content: center;
+            .label_checkbox {
+                font-size: 14px;
+                margin-left: 10px;
+            }
+        }
+
+        .button {
+            margin: 20px;
+            background-color: $colorsecundario;
+            border-radius: 5px;
+            color: black;            
+            font-size: 20px;
+            padding: 5px 10px;
+        }
+
+        .bye {
+            margin: 30px 20px;
+            text-align: center;
+            font-size: 22px;
+            color: black;
+            padding-bottom: 50px;
+        }
+    }

@@ -1,0 +1,231 @@
+
+/* media index */
+
+
+@media (min-width: 576px) {
+    .header_index {
+        .header_tittle {
+        font-size: 18px;
+        }
+    }
+}
+
+@media (min-width: 820px) {
+    .header_index {
+        .header_tittle {
+        font-size: 26px;
+    }
+}   
+}
+
+/* media productos */
+
+@media (min-width:576px) {
+    .main_products {
+        .products_tittle {
+            font-size: 24px;
+            }
+            .products {
+            .product1 {
+            width: 400px ;
+            }
+        } 
+    }
+}
+
+@media (min-width:820px) {
+    .main_products {
+        align-items: space-around;
+        .products_tittle {
+        font-size: 26px;
+        }
+        .products {
+            @include tarjetas (30px, flex, row, center);
+            flex-wrap: wrap;
+            justify-content: space-around;
+            .product1 {
+                width:325px;
+                margin-right: 30px;
+            }
+        }
+    }
+}
+
+    @media (min-width:1100px) {
+        .main_products {
+            .products_tittle {
+                font-size: 30px;
+            }
+            .products {
+                justify-content: center;
+                padding-bottom: 30px;
+                .product1 {
+                    width: 450px
+                }
+            }  
+        }   
+    }
+
+
+
+
+
+
+/* media testimonios */
+
+@media (min-width:576px) {
+    .main_testimonios {
+        .testimonios_tittle {
+            font-size: 24px;
+            }
+            .cards {
+            .card1 {
+            width: 400px ;
+        }
+    } 
+        .call_test {
+        font-size: 24px;
+        }
+    }
+}
+
+@media (min-width:820px) {
+    .main_testimonios {
+        align-items: space-around;
+        .testimonios_tittle {
+        font-size: 26px;
+        }
+        .cards {
+            @include tarjetas (30px, flex, row, center);
+            flex-wrap: wrap;
+            justify-content: space-around;
+            .card1 {
+                width:325px;
+                margin-right: 30px;
+            }
+        }
+    }
+}
+
+    @media (min-width:1100px) {
+        .main_testimonios {
+            .testimonios_tittle {
+                font-size: 28px;
+            }
+            .cards {
+                justify-content: center;
+                padding-bottom: 30px;
+                .card1 {
+                    width: 300px
+                }
+            }
+            .call_test {
+                font-size: 28px;
+            }
+    
+        }   
+}
+
+
+
+/* media contactos */
+
+@media (min-width:820px) {
+
+    .main_contact {   
+        h1 {
+            font-size: 32px;
+        }
+        .form {
+            .name_email {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                margin: 30px;
+                .name {
+                    .label_name {
+                        padding: 10px;
+                        font-size: 30px;
+                    }
+                }
+                .email {
+                    .label_email {
+                        font-size: 30px;
+                    }
+                }
+            }
+            .coment {
+                flex-direction: row;
+                margin: 30px;
+                .label_coment {
+                    font-size: 30px;            
+                }
+            }
+        }
+        .checkbox {
+            .label_checkbox {
+                font-size: 26px;
+            }
+        }
+    
+        .button {
+            margin: 30px;
+            border-radius: 8px;
+            font-size: 30px;
+            padding: 10px 20px;
+        }
+    
+        .bye {
+            margin: 30px;
+            font-size: 30px;
+        }
+    }
+}
+
+
+@media (min-width:1200px) {
+    .main_contact {   
+        h1 {
+            font-size: 36x;
+        }
+        h2 {
+            font-size: 32px;
+        }
+        .form {
+            .name_email {
+                margin: 30px;
+                justify-content: space-between;
+                .name {
+                    .label_name {
+                        padding: 10px;
+                        font-size: 24px;
+                    }
+                }
+                .email {
+                    .label_email {
+                        font-size: 24px;
+                    }
+                }
+            }
+            .coment {
+                flex-direction: row;
+                margin: 30px;
+                .label_coment {
+                    font-size: 24px;  
+                }          
+            }
+            
+        }
+        .checkbox {
+            .label_checkbox {
+                font-size: 24px;
+            }
+        }
+    
+        .button {
+            margin: 35px;
+            border-radius: 10px;
+            font-size: 30px;
+        }
+    }
+}
